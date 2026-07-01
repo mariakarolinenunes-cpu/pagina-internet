@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Motivação</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #ff9800;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+
+    #mensagem {
+      margin-top: 25px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffe082;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🌟 Nunca Desista!</h1>
+
+    <p>
+      Grandes conquistas começam com pequenos passos.
+      Acredite no seu potencial, mantenha o foco e siga em frente.
+      Cada dia é uma nova oportunidade para crescer.
+    </p>
+
+    <button onclick="motivar()">
+      Clique para receber motivação
+    </button>
+
+    <div id="mensagem"></div>
+  </div>
+
+  <script>
+    const frases = [
+      "Você é mais forte do que imagina! 💪",
+      "O sucesso é construído um passo de cada vez. 🚀",
+      "Persistência transforma sonhos em realidade. ✨",
+      "Hoje é um ótimo dia para começar algo incrível. 🌞",
+      "Acredite em você e tudo será possível. ❤️",
+      "Seu esforço de hoje será sua vitória de amanhã. 🏆",
+      "Nunca pare de aprender e evoluir. 📚",
+      "Cada desafio é uma oportunidade de crescimento. 🌱"
+    ];
+
+    function motivar() {
+      const indice = Math.floor(Math.random() * frases.length);
+      document.getElementById("mensagem").innerHTML = frases[indice];
+    }
+  </script>
+
+</body>
+</html>
