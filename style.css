@@ -1,1 +1,30 @@
-                                     
+              body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(-45deg,#667eea,#764ba2,#00c9ff,#92fe9d);
+    background-size:400% 400%;
+    animation:fundo 12s ease infinite;
+}
+
+@keyframes fundo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    width:600px;
+    margin:auto;
+    margin-top:100px;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    color:white;
+    text-align:center;
+}
+
+.dark{
+    background:#111;
+    color:white;
+}                       
